@@ -6,4 +6,22 @@ Management suspects that some employees may be using TOR browsers to bypass netw
 
 <img width="572" height="308" alt="image" src="https://github.com/user-attachments/assets/690bd4b3-e0b0-4272-8bca-03fefbc0a09e" />
 
+---
+
+## Platforms and Languages Leveraged
+- Windows 10 Virtual Machines (Microsoft Azure)
+- EDR Platform: Microsoft Defender for Endpoint
+- Kusto Query Language (KQL)
+- Tor Browser
+
+---
+
+### High-Level TOR-Related IoC Discovery Plan
+
+- **Check `DeviceFileEvents`** for any `tor(.exe)` or `firefox(.exe)` file events.
+- **Check `DeviceProcessEvents`** for any signs of installation or usage.
+- **Check `DeviceNetworkEvents`** for any signs of outgoing connections over known TOR ports.
+
+---
+
 
