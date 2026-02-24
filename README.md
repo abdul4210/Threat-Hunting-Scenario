@@ -24,4 +24,17 @@ Management suspects that some employees may be using TOR browsers to bypass netw
 
 ---
 
+## Steps Taken
+
+### 1. Searched the `DeviceFileEvents` Table
+
+Searched for any file that had the string "tor" in it and discovered what looks like the user "aliadmin" downloaded a TOR installer, did something that resulted in many TOR-related files being copied to the desktop, and the creation of a file called `tor-shopping-list.txt` on the desktop at `2026-02-23T01:19:00.744233Z`. These events began at `2026-02-22T22:24:57.5369744Z`.
+
+**Query used to locate events:**
+
+<img width="1158" height="181" alt="step 1 query" src="https://github.com/user-attachments/assets/f813a441-7c64-469d-97c2-3b71590baa07" />
+<img width="1436" height="301" alt="step 1 results" src="https://github.com/user-attachments/assets/9ffb8331-191d-44d3-a135-926008c5829d" />
+
+---
+
 
